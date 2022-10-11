@@ -14,11 +14,20 @@ function Comp({prop}) {
     //         <div style={{width:"10%",backgroundColor:'red'}}></div>
     //     )
     // }
+    if(prop==='')
+    {
+        return(
+            <div style={{width:"100%",backgroundColor:'red'}}></div>
+        )
+    }
+
     if(prop===" ")
     {
       return (
         <div style={{width:"10px"}} >
           </div>   
+        // <Box width='10px'>
+        //   </Box>   
     )
       
     }
@@ -26,8 +35,11 @@ function Comp({prop}) {
     {
   return (
     <div>
-    <img src={`${prop}.png`} alt={prop} height='20'/>
+    <img src={`${prop}.png`} alt={prop} height='25'/>
     </div>
+    // <Box pt='3'>
+    // <img src={`${prop}.png`} alt={prop} height='20px'/>
+    // </Box>
   )
 }
 if(prop===prop.toLowerCase()){
@@ -35,14 +47,20 @@ if(prop===prop.toLowerCase()){
     {
       return (
         <div style={{marginTop:"3px"}}>
-        <img key={prop.length} src={`smallcase/${prop}.png`}  alt={prop} height='30' width='15px'/>
+        <img key={prop.length} src={`smallcase/${prop}.png`}  alt={prop} height='33' width='15px'/>
         </div>
+        // <Box mt='3px' pt='3'>
+        // <img key={prop.length} src={`smallcase/${prop}.png`}  alt={prop} height='30px' width='15px'/>
+        // </Box>
       )
     }
     return (
       <div>
-      <img key={prop.length} src={`smallcase/${prop}.png`}  alt={prop} height='20'/>
+      <img key={prop.length} src={`smallcase/${prop}.png`}  alt={prop} height='23'/>
       </div>
+      // <Box pt='3'>
+      // <img key={prop.length} src={`smallcase/${prop}.png`}  alt={prop} height='20px'/>
+      // </Box>
     )
   }
 }
