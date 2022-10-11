@@ -1,14 +1,19 @@
 import React from 'react'
 
 function Comp({prop}) {
-    
-    if(prop.key==="Enter")
-    {
-        // return(
-        //     <div style={{width:"100%",color:'red'}}></div>
-        // )
-        console.log("enter")
-    }
+    // const [state,setState]=React.useState()
+    // React.useEffect(()=>{
+    //     document.addEventListener('keydown',pressKey)
+    // })
+    // const pressKey=(e)=>{
+    //    setState(e.key)
+    // }
+    // if(state==="Enter")
+    // {
+    //     return(
+    //         <div style={{width:"10%",backgroundColor:'red'}}></div>
+    //     )
+    // }
     if(prop===" ")
     {
       return (

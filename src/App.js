@@ -10,8 +10,9 @@ const changEvent=(e)=>{
 }
 
 const arr=Array.from(state)
+
   return (<>
-    <textarea style={{width:'80%',height:'30%',marginLeft:'80px'}} type="text" value={state} onChange={changEvent}/>
+    <textarea placeholder="Enter Here.." style={{width:'80%',height:'200sikuer 8px',marginLeft:'80px',marginTop:'50px',fontSize:'20px',padding:'10px'}} type="text" value={state} onChange={changEvent}/>
     <div>
     <center>
     <h1>
