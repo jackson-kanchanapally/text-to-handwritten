@@ -11,17 +11,32 @@ const changEvent=(e)=>{
 
 const arr=Array.from(state)
   return (<>
-    <textarea style={{width:'80%',height:'30%'}} type="text" value={state} onChange={changEvent}/>
+    <textarea style={{width:'80%',height:'30%',marginLeft:'80px'}} type="text" value={state} onChange={changEvent}/>
     <div>
+    <center>
     <h1>
       containt
     </h1>
-    <div style={{display:"flex",width:'70%',justifyContent:'flex-start',alignItems:"center"}}> 
+    </center>
+    <div style={{display:"flex",width:'70%',justifyContent:'center',alignItems:"center",
+    background: 'white',
+    display: 'block',
+    margin:' 0 auto',
+    marginBottom: '0.5cm',
+    boxShadow: '0 0 0.5cm rgba(0,0,0,0.5)',
+    width: '21cm',
+    height: '29.7cm', 
+    padding:'100px 0px 80px 50px'
+  }}> 
+    <div style={{display:'flex',flexWrap: 'wrap',width:'90%',justifyContent:'flex-start'}}>
     {arr.map((e)=>{
       return <Comp prop={e} key={e.UniId}/>
 
 })}
 </div>
+</div>
+
+
     </div>
     </>
   );
