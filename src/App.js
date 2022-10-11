@@ -3,9 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-const [state,setState] =React.useState([])
+const [state,setState] =React.useState('')
 const changEvent=(e)=>{
  setState(e.target.value)
+}
+
+const nL=(e)=>{
+  if(e.key==='Enter')
+  {
+    
+  }
 }
 const pt={paddingTop:"10px"}
 const arr=Array.from(state)
@@ -15,7 +22,7 @@ const arr=Array.from(state)
     <h1>
       containt
     </h1>
-    <div style={{display:"flex"}}> 
+    <div style={{display:"flex",width:'70%',justifyContent:'center'}}> 
     {arr.map((e)=>{
       if(e===" ")
       {
@@ -40,7 +47,7 @@ const arr=Array.from(state)
         {
           return (
             <div>
-            <img key={e.length} src={`smallcase/${e}.png`}  alt={e} height='33'/>
+            <img key={e.length} src={`smallcase/${e}.png`}  alt={e} height='32' width='15px'/>
             </div>
           )
         }
